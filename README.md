@@ -78,10 +78,17 @@ A continuación se muestran algunos gráficos que nos ayudan a entender mejor lo
 
 
 ## Predicción de ventas con Knn
-Utilizando KNN se obtuvo un valor de $R^2_{max}\approx0.47$ 
+Utilizando KNN se obtuvo un valor de 
+<img src="https://render.githubusercontent.com/render/math?math=R^2_{max}\approx0.47"> 
 
 ## Predicción de ventas con Random Forest
-Utilizando KNN se obtuvo un valor de $R^2_{max}\approx0.58$, superando a los $\lnapprox0.47$ obtenidos con KNN. Por lo tanto, se seleeciona el modelo generado mediante Random Forest.
+Con Random Forest se obtuvo un valor de 
+<img src="https://render.githubusercontent.com/render/math?math=R^2_{max}\approx0.58">
+, superando a los 
+<img src="https://render.githubusercontent.com/render/math?math=\approx0.47">
+obtenidos con KNN. Por lo tanto, se seleeciona el modelo generado mediante Random Forest.
+
+
 
 ![Comparativa-R2](https://github.com/orlandoch/predicciones-ventas/raw/main/img/r2_knn_rf.png)
 
