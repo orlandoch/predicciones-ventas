@@ -6,8 +6,7 @@ Este proyecto tiene como finalidad crear un modelo de regresión para predecir l
 
 ## **Diccionario de datos**
 <table><tbody><tr><td><strong>Nombre de la variable</strong></td><td><strong>Descripción</strong></td></tr><tr><td>Item_Identifier</td><td>Número   de identificación único del producto</td></tr><tr><td>Item_Weight</td><td>Peso del producto</td></tr><tr><td>Item_Fat_Content</td><td>Si el producto es bajo en grasas o regular</td></tr><tr><td>Item_Visibility</td><td>El porcentaje de área total de visualización de todos los productos en la tienda asignados a este producto particular</td></tr><tr><td>Item_Type</td><td>La categoría a la que pertenece el producto</td></tr><tr><td>Item_MRP</td><td>Precio   Máximo Minorista (precio de lista) del producto</td></tr><tr><td>Outlet_Identifier</td><td>Número   de identificación único de la tienda</td></tr><tr><td>Outlet_Establishment_Year</td><td>El año en el que se estableció la tienda</td></tr><tr><td>Outlet_Size</td><td>El tamaño de la tienda en cuanto a la superficie total que cubre</td></tr><tr><td>Outlet_Location_Type</td><td>El tipo de área donde se ubica la tienda</td></tr><tr><td>Outlet_Type</td><td>Si la tienda es un almacén o algún tipo de supermercado</td></tr><tr><td>Item_Outlet_Sales</td><td>Las ventas del producto en la tienda particular. Esta es la variable objetivo que se debe predecir.</td></tr></tbody></table>
-<table><tbody><tr><td><strong>Nombre de la variable</strong></td><td><strong>Descripción</strong></td></tr><tr><td>Item_Identifier</td><td>Número   de identificación único del producto</td></tr><tr><td>Item_Weight</td><td>Peso del producto</td></tr><tr><td>Item_Fat_Content</td><td>Si el producto es bajo en grasas o regular</td></tr><tr><td>Item_Visibility</td><td>El porcentaje de área total de visualización de todos los productos en la tienda asignados a este producto particular</td></tr><tr><td>Item_Type</td><td>La categoría a la que pertenece el producto</td></tr><tr><td>Item_MRP</td><td>Precio   Máximo Minorista (precio de lista) del producto</td></tr><tr><td>Outlet_Identifier</td><td>Número   de identificación único de la tienda</td></tr><tr><td>Outlet_Establishment_Year</td><td>El año en el que se estableció la tienda</td></tr><tr><td>Outlet_Size</td><td>El tamaño de la tienda en cuanto a la superficie total que cubre</td></tr><tr><td>Outlet_Location_Type</td><td>El tipo de área donde se ubica la tienda</td></tr><tr><td>Outlet_Type</td><td>Si la tienda es un almacén o algún tipo de supermercado</td></tr><tr><td>Item_Outlet_Sales</td><td>Las ventas del producto en la tienda particular. Esta es la variable objetivo que se debe predecir.
-</td></tr></tbody></table>
+
 
 
 ## Limpieza de datos y datos faltantes
@@ -86,17 +85,19 @@ Utilizando KNN se obtuvo un valor de
 
 ## Predicción de ventas con Random Forest
 Con Random Forest se obtuvo un valor de 
-<img src="https://render.githubusercontent.com/render/math?math=R^2_{max}\approx0.58">
+<img src="https://render.githubusercontent.com/render/math?math=R^2_{max}\approx0.62">
 , superando a los 
 <img src="https://render.githubusercontent.com/render/math?math=\approx0.47">
-obtenidos con KNN. Por lo tanto, se seleeciona el modelo generado mediante Random Forest.
+obtenidos con KNN. en 
+<img src="https://render.githubusercontent.com/render/math?math=\approx0.15">
+Por lo tanto, se seleeciona el modelo generado mediante Random Forest.
 
 
 
 ![Comparativa-R2](https://github.com/orlandoch/predicciones-ventas/raw/main/img/r2_knn_rf.png)
 
 ### Importancia de las variables predictoras
-EN el siguiente gráfico se puede observar la importancia de cada una de las variables, es decir, las variables con la mayor capacidad de discriminación.
+EN el siguiente gráfico se puede observar la importancia de cada una de las variables para el modelo Random Forest, es decir, las variables con la mayor capacidad de discriminación.
 
 ![Feature-Importance](https://github.com/orlandoch/predicciones-ventas/raw/main/img/feature_importance_rf.png)
 
