@@ -63,12 +63,15 @@ dfKnn['Item_Weight'] = dfKnn['Item_Weight'].fillna(dfKnn['Item_Weight'].mean())
 ```
 
 ## Gráficos
-A continuación se muestran algunos gráficos
+A continuación se muestran algunos gráficos que nos ayudan a entender mejor los datos.
 
+### Cantidad de locales en el tiempo.
 ![Cantidad-Locales-Tiempo](https://github.com/orlandoch/predicciones-ventas/raw/main/img/locales_tiempo.png)
 
+### Ventas por sucursal.
 ![Ventas-Sucursal](https://github.com/orlandoch/predicciones-ventas/raw/main/img/ventas_sucursal.png)
 
+### Distribución de los precios por categoría.
 ![Precios-Categoría](https://github.com/orlandoch/predicciones-ventas/raw/main/img/caja_bigotes_precios_categoria.png)
 
 
@@ -86,3 +89,9 @@ Utilizando KNN se obtuvo un valor de $R^2_{max}\approx0.58$, superando a los $\l
 EN el siguiente gráfico se puede observar la importancia de cada una de las variables, es decir, las variables con la mayor capacidad de discriminación.
 
 ![Feature-Importance](https://github.com/orlandoch/predicciones-ventas/raw/main/img/feature_importance_rf.png)
+
+## Presentación
+La presentación, en formato PDF puede descargarse desde [aquí](https://github.com/orlandoch/predicciones-ventas/raw/main/misc/presentación.pdf)
+
+## Video
+El video, en formato MP4 puede descargarse desde [aquí](https://github.com/orlandoch/predicciones-ventas/raw/main/misc/video.mp4)
